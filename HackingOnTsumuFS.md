@@ -1,0 +1,15 @@
+# General Rules #
+Please keep in mind that while hacking on TsumuFS, one should attempt to
+observe the following rules:
+
+  1. All classes must have unit tests.
+  1. Commits must pass pychecker (make check) and unit tests (make test).
+
+Please use the following coding style guide:
+
+  * Attempt to follow 100 column line length guides. _Note that this is a soft guideline -- if a line is more readable past 100 lines, feel free to do so, but do this as sparingly as possible._
+  * Tabs and indents are two (2) spaces, no tabs whatsoever.
+  * Private methods and vars are prefixed with an underscore.
+  * Methods are written in camelCaseLikeThis.
+
+With that said, happy hacking!

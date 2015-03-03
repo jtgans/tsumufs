@@ -1,0 +1,37 @@
+# -*- sh -*-
+#
+# Not really shell, but it's a much better mode for editing gpic
+# files.
+
+define file_box {
+  box shaded "grey" wid 1 ht 0.25 "song.txt";
+  box wid 1 ht 1.5 with .top at last box.bottom;
+  move to last box.c;
+}
+
+down;
+
+.ps 16
+"\fBCache Contents\fP" ht 0.5;
+.ps 12
+[
+  right;
+  [ file_box "ding," "dang," "bang," "bump." "Rolling" "down the" "hole..."; ]
+  arrow "First change" "" 1.5;
+  [ file_box "." "." "whack," "." "." "." "."; ]
+  arrow "Second change" "" 1.5;
+  [ file_box "." "." "funk," "." "." "." "."; ]
+]
+move 0.5;
+
+.ps 16
+"\fBSynclog Contents\fP" ht 0.5;
+.ps 12
+[
+  right;
+  [ box wid 1 ht 1.75 "nothing for" "this file" "yet" dashed; ]
+  arrow "First change" "" 1.5;
+  [ file_box "3: bang,"; ]
+  arrow "Second change" "" 1.5;
+  [ file_box "3: bang,"; ]
+]
